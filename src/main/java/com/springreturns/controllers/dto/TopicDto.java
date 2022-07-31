@@ -1,6 +1,7 @@
 package com.springreturns.controllers.dto;
 
 import com.springreturns.models.Topic;
+import org.springframework.data.domain.Page;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -20,8 +21,8 @@ public class TopicDto {
         this.creationDate = topic.getCreationDate();
     }
 
-    public static List<TopicDto> convert(List<Topic> topicList) {
-        return topicList.stream().map(TopicDto::new).collect(Collectors.toList());
+    public static Page<TopicDto> convert(Page<Topic> topics) {
+        return topics.map(TopicDto::new);
     }
 
 

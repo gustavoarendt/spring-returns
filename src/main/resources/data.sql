@@ -1,4 +1,4 @@
-INSERT INTO USERS(name, email, password) VALUES('Gustavo', 'gustavo@mail.com', '123456');
+INSERT INTO USERS(name, email, password) VALUES('Gus', 'gus@mail.com', '$2a$10$jqzNNWN91cg5V4Ldflsf9.hhgtRa5.Jv6Ex.4uBoJh8.ahYuA0Vum');
 
 INSERT INTO COURSE(name, category) VALUES('Spring', 'Java');
 INSERT INTO COURSE(name, category) VALUES('.NET', 'Csharp');
